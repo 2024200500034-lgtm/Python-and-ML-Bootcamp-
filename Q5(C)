@@ -1,0 +1,28 @@
+# Add a Login System before the ATM:
+username_intial = "User"
+password_intial = "Pass"
+correct_pin = "5555"
+is_active = True 
+
+
+username = input("Enter Username: ")
+password = input("Enter Password: ")
+
+if username == username_intial and password == password_intial:
+
+    if not is_active:
+        print("Account is disabled.")
+    else:
+        print("Login Successful!")
+        
+
+        pin_attempt = input("Please enter your ATM PIN: ")
+        
+        if pin_attempt == correct_pin:
+            print("Access Granted. Welcome to your ATM.")
+            # ATM Menu logic goes here (Withdraw/Deposit)
+        else:
+            print("Incorrect PIN. Access Denied.")
+            
+else:
+    print("Invalid Username or Password.")
