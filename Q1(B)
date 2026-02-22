@@ -1,0 +1,17 @@
+# (b)Perform the following type conversions and print the results:
+str_to_int = int("123")
+
+print("String '123' to int:", int("123"))
+int_to_str = str(456)
+
+print("Int 456 to string:", str(456))
+float_to_int = int(3.99)
+
+print("Float 3.99 to int:", int(3.99)) 
+# When converting float 3.99 to integer using int(), the decimal part (.99) is dropped, resulting in the answer 3.
+
+int1_to_bool = bool(1)
+int0_to_bool = bool(0)
+
+print("Int 1 to bool:", bool(1))   
+print("Int 0 to bool:", bool(0))   
