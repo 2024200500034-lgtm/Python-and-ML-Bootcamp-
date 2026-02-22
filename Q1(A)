@@ -1,0 +1,10 @@
+# Declare variables and print their data types
+name = "MD. RIFAT ARIEAN NABIL" 
+age = 22  
+gpa = 3.85  
+is_student = True  
+
+print("Name type:", type(name))
+print("Age type:", type(age))
+print("GPA type:", type(gpa))
+print("Is student type:", type(is_student))
