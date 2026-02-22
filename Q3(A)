@@ -1,0 +1,13 @@
+# Given name = "python programming", perform the following:
+
+name ="python programming"
+
+print(name.upper()) 
+# Print the string in all uppercase
+print(name.title()) 
+# Print the string in title case (first letter of each word capitalized)
+print(name.replace("programming", "language"))  
+# Replace "programming" with "language" and print the result
+print(len(name))
+
+# Print the total number of characters in the string
