@@ -1,0 +1,18 @@
+#Grade Calculator — take a student's mark (0–100) as input: [4 marks]
+mark = int(input("Enter student's mark : "))
+
+
+if mark < 0 or mark > 100:
+    print('Invalid mark')
+elif mark >= 90:
+    print("A+")
+elif mark >= 80:
+    print("A")
+elif mark >= 70:
+    print("B")
+elif mark >= 60:
+    print("C")
+elif mark >= 50:
+    print("D")
+else:
+    print("F")
