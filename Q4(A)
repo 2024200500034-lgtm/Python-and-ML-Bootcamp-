@@ -1,0 +1,11 @@
+#Age Checker — take the user's age as input:
+age = int(input("Enter age: "))
+
+if age < 0:
+    print('Invalid age')
+elif age < 13:
+    print('You are a child')
+elif 13 <= age <= 17:
+    print('You are a teenager')
+else:
+    print('You are an adult')
