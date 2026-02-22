@@ -1,0 +1,13 @@
+a=17
+b=5
+print(a+b)#Addition
+print(a-b)#Subtraction
+print(a*b)#Multiplication
+print(a/b)#Division
+print(a//b) #Floor division
+print(a%b) #modulus
+print(a**b) #power
+#Comparison results
+print(a > b)
+print(a == b)
+print(a != b)
