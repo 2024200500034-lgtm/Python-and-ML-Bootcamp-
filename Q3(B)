@@ -1,0 +1,7 @@
+name = "MD. Rifat Ariean Nabil"
+age = 22
+gpa = 3.85
+
+print(f"My name is {name}")
+print(f"I am {age} years old ")
+print(f"my GPA is {gpa}")
