@@ -1,0 +1,20 @@
+#Write an ATM program with the following variables: pinNumber, balance, and request. The program
+
+balance = 5000
+correct_pin = 1234
+
+pinNumber = int(input("Enter your PIN: "))
+request = int(input("Enter withdrawal amount: "))
+
+if pinNumber == correct_pin:
+    if request > 500:
+        if request <= balance:
+            balance = balance - request
+            print("Successful")
+            print(f"Current balance: {balance}")
+        else:
+            print("Insufficient balance")
+    else:
+        print("Must be greater than 500")
+else:
+    print("Wrong pin")
