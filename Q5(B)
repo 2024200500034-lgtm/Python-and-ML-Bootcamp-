@@ -1,0 +1,36 @@
+
+#Adding an attempts counter to an ATM machine
+name=str(input("Enter your namme: "))
+pin_num=1234
+balance=10000
+attempts=3
+while attempts>0:
+  pin=int(input("Enter your pin number: "))
+  if pin==pin_num:
+    print(f"Successfully logged in Mr.{name} .")
+    request=int(input("Enter the amount you want to withdraw: "))
+
+    if request>500:
+
+       if balance>=request:
+
+          print("Successful withdrawal of",request,"Taka .")
+          balance=balance-request
+          print("Remaining balance: ",balance,"Taka only .")
+
+       else:
+          print("Insufficient balance !!!!")
+          print (f"Mr.{name}You have ",balance,"taka only in your account .")
+    else:
+       print("The requested amount should be greater than 500 Taka .")
+    break
+  else:
+    attempts=attempts-1
+    if attempts>0:
+      print(f"Wrong pin Mr.{name}!! Try again!!")
+      print("Attempts remaining: ",attempts)
+
+    else:
+      print("Too many wrong pins!! ")
+      print(f"Mr.{name} your Card has been blocked!!")
+    break
